@@ -1,0 +1,15 @@
+{
+  "name": "cooknchill",
+  "version": "1.0.0",
+  "description": "food recipe sharing blog",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "dc",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.12.6"
+  }
+}
