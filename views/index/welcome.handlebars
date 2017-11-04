@@ -1,12 +1,19 @@
-<hi>Welcome</hi>
-<p>Welcome to CookNChill</p>
+
+<h1>Welcome!</h1>
 <p>Post your favorite recipes and your food stories</p>
+
+{{#if user}}
+{{else}}
+  <a class="btn red darken-1" href="/auth/google"><i class="fa fa-google left"></i> Login With Google</a>
+{{/if}}
+
+
 <a class="btn red darken-1" href="/auth/google"><i class="fa ga-google left"></i>Login with Google</a>
     {{#if user}}
 
     {{else}}
     <li>
-    <a class="btn red darken-1" href="/auth/google"><i class="fa ga-google left"></i>Login with Google</a></li>
+    {{!-- <a class="btn red darken-1" href="/auth/google"><i class="fa ga-google left"></i>Login with Google</a></li> --}}
     {{/if}}
     <li>
     <a href="/stories">Stories</a></li>
