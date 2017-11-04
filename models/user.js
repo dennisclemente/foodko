@@ -25,4 +25,4 @@ const UserSchema = new Schema({
 //Create collection and add schema
 mongoose.model('users', UserSchema);
 
-module.exports ="user";
+// module.exports ="user";
