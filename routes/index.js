@@ -1,23 +1,3 @@
-// const express = require('express');
-// const router = express.Router();
-// const {ensureAuthenticated} = require('../helpers/auth');
-
-// // router.get('/', ensureGuest, (req, res) => {
-
-// router.get(ensureGuest, (req, res) => {
-// nres.render('index/welcome');
-// });
-
-// router.get('/dashboard', ensureAuthenticated, (req, res) => {
-//     res.send('index/dashboard');
-// });
-
-// router.get('/about', (req, res) => {
-//     res.send('index/about');
-// });
-
-// module.exports = router;
-
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
