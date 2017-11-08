@@ -4,7 +4,9 @@
   "description": "food stories and recipes",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "keys_dev.js",
+    "prod": "keys_prod.js"
   },
   "keywords": [
     "food",

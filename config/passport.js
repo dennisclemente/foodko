@@ -1,4 +1,4 @@
-const GoogleStrategy = require('passport-google-oauth20').Strategy;
+const GoogleStrategy = require ('passport-google-oauth20').Strategy;
 const mongoose = require('mongoose');
 const keys = require('./keys');
 
@@ -11,11 +11,9 @@ module.exports = function(passport) {
         clientID: keys.googleClientID,
         clientSecret: keys.googleClientSecret,
         callbackURL: '/auth/google/callback',
-        proxy: true
+        proxy: true //to avoid any http/https error
         }, (accessToken, refreshToken, profile, done) => {
-        //    console.log(accessToken);
-        //    console.log(profile); 
-
+s
         const image = profile.photos[0].value.substring(0,profile.photos[0].value.indexOf('?'));
         
         const newUser = {

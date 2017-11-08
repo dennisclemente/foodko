@@ -34,6 +34,13 @@ const {
 
 // Map global promises
 mongoose.Promise = global.Promise;
+
+// //Mongoose local host
+// mongoose.connect('mongodb://localhost',{
+//   useMongoClient: true
+// }).then(() => console.log('Mongo Connected...'))
+// .catch(err => console.log(err));
+
 // Mongoose connect
 mongoose.connect(keys.mongoURI, {
   useMongoClient:true
