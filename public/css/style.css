@@ -1,3 +1,10 @@
+#banner-image {
+  background: url('./resto-person.jpg') no-repeat center center;
+  margin: 0;cd
+  min-width: 100%;
+  min-height: 100%;
+}
+
 body {
     display: flex;
     min-height: 100vh;
