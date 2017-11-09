@@ -1,15 +1,17 @@
 
-<h4>Post your favorite recipes and food stories here</h4>
+<div class="floating-text">
+    <h4>Post your favorite recipes and food stories here</h4>
 
-    {{!-- <!-- bannerimage -->
-        <div id="banner-image"><img src="{{../resto-person.jpg }}"/>
-        </div>  
-    --}}
+        {{!-- <!-- bannerimage -->
+            <div id="banner-image"><img src="{{../resto-person.jpg }}"/>
+            </div>  
+        --}}
 
-{{#if user}}
-{{else}}
-  <a class="btn green" href="/auth/google"><i class="fa fa-google left"></i> Login With Google</a>
-{{/if}}
+    {{#if user}}
+    {{else}}
+    <a class="btn green" href="/auth/google"><i class="fa fa-google left"></i> Login With Google</a>
+    {{/if}}
 
-    <a href="/stories">Tell us your most delicious discovery of a meal. Whether you decided to replicate the meal in your home or simply enjoyed it, tell us your food story
+    <a class="stories-link" href="/stories">Tell us your most delicious discovery of a meal. Whether you decided to replicate the meal in your home or simply enjoyed it, tell us your food story
     </li>
+</div>

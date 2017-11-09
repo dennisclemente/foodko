@@ -1,8 +1,23 @@
-#banner-image {
-  background: url('./resto-person.jpg') no-repeat center center;
-  margin: 0;cd
-  min-width: 100%;
-  min-height: 100%;
+#banner-image img {
+  max-width: 100vw !important;
+  min-height: 150px;
+  opacity: 0.5;
+}
+
+.floating-text {
+  z-index: 10;
+  position: absolute;
+  top: 10vw;
+  width: 60vw;
+  left: 20vw;
+  color: black;
+}
+
+.floating-text .stories-link {
+  display: block;
+  color: black;
+  font-size: 16pt;
+  text-shadow: 1px solid gray;
 }
 
 body {
@@ -22,3 +37,4 @@ body {
 footer{
     margin-top: 20px;
 }
+
